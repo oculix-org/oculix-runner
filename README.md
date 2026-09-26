@@ -204,7 +204,7 @@ sequenceDiagram
     A->>A: Save submitted script.py
     A->>D: Register artifact and queue run
     A-->>C: Run ID
-    W->>D: Select next queued run; mark running
+    W->>D: Select next queued run, mark running
     W->>W: Compose header, script and run.json
     opt Script uses VNC
         W->>T: Connect, interact and capture
@@ -215,7 +215,7 @@ sequenceDiagram
     A->>D: Read incremental output
     A-->>C: Stream log lines
     W->>D: Save status, exit code and duration
-    A-->>C: Terminal status; close stream
+    A-->>C: Terminal status, close stream
 ```
 
 ### 🗄️ Data model
