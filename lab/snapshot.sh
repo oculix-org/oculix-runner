@@ -9,7 +9,7 @@ echo
 echo "## Notes"
 echo
 echo "- KICKS: installation in \`Guide_installation_KICKS_1.5.0_TK5_OculiX.pdf\` (French), day-to-day use in \`KICKS.md\`."
-echo "- Public KICKS image: \`ghcr.io/julienmerconsulting/target-mainframe-kicks:1.5.0-installed\` (MYLOGON included since 2026-09-14); the compose pulls it."
+echo "- Public KICKS image: \`ghcr.io/oculix-org/target-mainframe-kicks:1.5.0-installed\` (MYLOGON included since 2026-09-14); the compose pulls it."
 echo "- Local safety nets: \`oculix-lab/target-mainframe-kicks:kicks-installed-2026-08-27\` (before MYLOGON) and \`...:kicks-installed-2026-09-14\`."
 echo
 echo "## Images"
