@@ -78,8 +78,8 @@ the left, then Shift+Insert in the screen.
 The DASD files live inside the container, not in a volume. After any change inside MVS:
 
 ```
-docker commit target-mainframe-kicks ghcr.io/julienmerconsulting/target-mainframe-kicks:1.5.0-installed
-docker push ghcr.io/julienmerconsulting/target-mainframe-kicks:1.5.0-installed
+docker commit target-mainframe-kicks ghcr.io/oculix-org/target-mainframe-kicks:1.5.0-installed
+docker push ghcr.io/oculix-org/target-mainframe-kicks:1.5.0-installed
 ```
 
 Never run `docker compose down`, `up --build` or `--force-recreate` on this service without having
