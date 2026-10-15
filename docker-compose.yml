@@ -20,7 +20,7 @@ services:
     # TK5 + KICKS 1.5.0 already installed (see lab/KICKS.md). To rebuild a bare
     # TK5 and redo the installation yourself, follow the guide in lab/.
     profiles: [lab]
-    image: ghcr.io/julienmerconsulting/target-mainframe-kicks:1.5.0-installed
+    image: ghcr.io/oculix-org/target-mainframe-kicks:1.5.0-installed
     container_name: target-mainframe-kicks
     hostname: target-mainframe-kicks
 
