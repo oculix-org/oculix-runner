@@ -27,7 +27,7 @@ You need Docker with Docker Compose. The examples use Bash, `curl` and `jq` to r
 ### 🐳 Build and start
 
 ```bash
-git clone https://github.com/julienmerconsulting/oculix-runner.git
+git clone https://github.com/oculix-org/oculix-runner.git
 cd oculix-runner
 
 # Choose a nonempty key before the first startup.
@@ -204,7 +204,7 @@ sequenceDiagram
     A->>A: Save submitted script.py
     A->>D: Register artifact and queue run
     A-->>C: Run ID
-    W->>D: Select next queued run; mark running
+    W->>D: Select next queued run, mark running
     W->>W: Compose header, script and run.json
     opt Script uses VNC
         W->>T: Connect, interact and capture
@@ -215,7 +215,7 @@ sequenceDiagram
     A->>D: Read incremental output
     A-->>C: Stream log lines
     W->>D: Save status, exit code and duration
-    A-->>C: Terminal status; close stream
+    A-->>C: Terminal status, close stream
 ```
 
 ### 🗄️ Data model
@@ -338,4 +338,4 @@ To save the lab inventory: `sh lab/snapshot.sh > lab/SNAPSHOT.md`.
 - **TK5**, by Rob Prins: [MVS 3.8j Turnkey system](https://www.prince-webdesign.nl/tk5).
 - **KICKS for TSO 1.5.0**, © Michael Noel: [moshix/kicks](https://github.com/moshix/kicks). Its license is included in the lab image as member `HERC01.KICKSSYS.V1R5M0.DOC(LICENSE)`. The image redistributes the complete original package free of charge; the objects modified for TK5 and the added `MYLOGON` are supplied in source form next to the originals. No KICKS object is stored in this repository.
 
-**This runner repository is licensed separately from OculiX**, under the [PolyForm Strict License 1.0.0](LICENSE). See that file for the applicable terms. Contact the author for commercial licensing through the [repository owner's profile](https://github.com/julienmerconsulting).
+**This runner repository is licensed separately from OculiX**, under the [PolyForm Strict License 1.0.0](LICENSE). See that file for the applicable terms. Contact the author, [Julien Mer](https://github.com/julienmerconsulting), for commercial licensing.
